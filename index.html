@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--
+      CSP meta tag provides a fallback for static hosts that cannot set HTTP headers.
+      The authoritative production CSP lives in public/_headers (Netlify) or your
+      reverse-proxy config. Both must be kept in sync.
+      'unsafe-eval' is intentionally absent — WebGL shader compilation does not
+      go through the JS eval mechanism and is unaffected by this restriction.
+    -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="
+        default-src 'none';
+        script-src 'self';
+        worker-src 'self' blob:;
+        style-src 'self' 'unsafe-inline';
+        img-src 'self' blob: data:;
+        media-src 'self' blob:;
+        connect-src 'none';
+        frame-src 'none';
+        object-src 'none';
+        base-uri 'self';
+        form-action 'none';
+        upgrade-insecure-requests
+      "
+    />
+    <meta name="referrer" content="no-referrer" />
+    <meta name="description" content="High-performance, edge-aware ASCII and generative typographic media tool powered by WebGL" />
+    <title>AuraASCII</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

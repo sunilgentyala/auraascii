@@ -1,0 +1,89 @@
+# -----------------------------------------------------------------------
+# AuraASCII — .gitignore
+# Vite + React + TypeScript + Node + macOS + Windows + IDE artifacts
+# -----------------------------------------------------------------------
+
+# Build outputs
+dist/
+dist-ssr/
+build/
+out/
+
+# Vite cache
+.vite/
+vite.config.ts.timestamp-*
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+.npm/
+
+# TypeScript
+*.tsbuildinfo
+tsconfig.tsbuildinfo
+
+# Environment files — NEVER commit secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+
+# Testing
+coverage/
+.nyc_output/
+vitest.results.json
+
+# Editor / IDE
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.iml
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.swp
+*.swo
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# Temporary / scratch
+tmp/
+temp/
+.cache/
+.parcel-cache/
+
+# Storybook
+storybook-static/
+
+# Generated glyph atlases (regenerated at build time)
+public/atlas/
+
+# Media test assets (keep out of source control)
+public/samples/*.mp4
+public/samples/*.gif
+public/samples/*.mov
