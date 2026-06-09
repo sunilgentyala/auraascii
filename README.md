@@ -27,16 +27,13 @@ AuraASCII converts images, GIFs, live video streams, and procedural GLSL math ex
 
 ---
 
-## Screenshot
+## Screenshots
 
-```
-@@@@@@@@@@@@@@@@@#########MMMWWW&&&&888888888BBBB
-@@@@@@@@@@@#######MMMMMWWW&&&&8888888BBBBB$$$$XXX
-@@@@@@####MMMMMWWW&&&888888BBB$$$$$XXXoooaaahhhkk
-###MMMMMWWW&&&&8888BBB$$$XXXXooaaahhhkkbbddppqqww
-                                                  
-   ░░░░▒▒▒▒▓▓▓▓████  AuraASCII  ████▓▓▓▓▒▒▒▒░░░░
-```
+| Full UI | Full Canvas | Math Shader Mode |
+|---|---|---|
+| ![Full UI with control panel](docs/screenshot.png) | ![Full canvas view](docs/screenshot-fullcanvas.png) | ![Ripple math shader](docs/screenshot-mathmode.png) |
+
+*Left: default debug texture with control panel open. Center: panel collapsed, wall-to-wall ASCII. Right: live Ripple GLSL expression (`sin(length(uv - 0.5) * 30.0 - uTime * 4.0) * 0.5 + 0.5`) rendered in real time.*
 
 ---
 
