@@ -37,7 +37,11 @@ const CSP_DIRECTIVES = [
   "upgrade-insecure-requests",
 ].join('; ');
 
+// Set base to the repo name when building for GitHub Pages; use / for local dev.
+const base = process.env.GITHUB_ACTIONS === 'true' ? '/auraascii/' : '/';
+
 export default defineConfig({
+  base,
   plugins: [react(), glslLoader()],
 
   resolve: {
